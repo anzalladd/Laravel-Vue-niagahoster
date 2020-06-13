@@ -1,0 +1,65 @@
+.mainNavbar {
+    .mainNavbar-top {
+        @media screen and (max-width: $break-md) {
+            display: none;
+        }
+        .bookmark-icon {
+            width: calc(110px / 4);
+            height: calc(56px / 4);
+            box-sizing: content-box;
+            padding-bottom: 25px;
+            position: relative;
+            background-color: #0090ef;
+            color: white;
+            letter-spacing: 0.2em;
+            text-align: center;
+            text-transform: uppercase;
+            .tag-icon {
+                position: absolute;
+                top: 5px;
+                right: 4px;
+                font-size: 18px;
+            }
+        }
+        .bookmark-icon:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-bottom: calc(13px / 1) solid white;
+            border-left: calc(55px / 4) solid transparent;
+            border-right: calc(55px / 4) solid transparent;
+        }
+        .icon-user {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #4c4c4c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding-right: 0.5px;
+        }
+    }
+    .mainNavbar-bottom {
+        border-top: 1px solid #dddcdc;
+        border-bottom: 1px solid #dddcdc;
+        margin-top: 15px;
+        @media screen and (max-width: $break-md) {
+            margin-top: 0px;
+        }
+        .icon-logo {
+            width: 200px;
+        }
+        .nav-link {
+            color: #646464;
+            font-weight: 500;
+        }
+        .nav-link:hover {
+            font-weight: bold;
+        }
+    }
+}
